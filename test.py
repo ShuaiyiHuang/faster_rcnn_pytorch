@@ -19,11 +19,11 @@ from faster_rcnn.fast_rcnn.config import cfg, cfg_from_file, get_output_dir
 imdb_name = 'voc_2007_test'
 cfg_file = 'experiments/cfgs/faster_rcnn_end2end.yml'
 # trained_model = '/media/longc/Data/models/VGGnet_fast_rcnn_iter_70000.h5'
-trained_model = 'models/saved_model3/faster_rcnn_90000.h5'
+trained_model = '../model/pretrained_models/faster_rcnn/VGGnet_fast_rcnn_iter_70000.h5'
 
 rand_seed = 1024
 
-save_name = 'faster_rcnn_100000'
+save_name = 'faster_rcnn_70000'
 max_per_image = 300
 thresh = 0.05
 vis = False
