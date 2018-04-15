@@ -33,10 +33,11 @@ def log_print(text, color=None, on_color=None, attrs=None):
 
 # hyper-parameters
 # ------------
-imdb_name = 'voc_2007_trainval'
+# imdb_name = 'voc_2007_trainval'
+imdb_name = 'coco_2014_train'
 cfg_file = 'experiments/cfgs/faster_rcnn_end2end.yml'
-pretrained_model = 'data/pretrained_model/VGG_imagenet.npy'
-output_dir = 'models/saved_model3'
+pretrained_model = '../model/pretrained_models/VGG16/VGG_imagenet.npy'
+output_dir = '../model/fasterckpt/saved_model3'
 
 start_step = 0
 end_step = 100000
@@ -110,6 +111,7 @@ re_cnt = False
 t = Timer()
 t.tic()
 for step in range(start_step, end_step+1):
+
 
     # get one batch
     blobs = data_layer.forward()

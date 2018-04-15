@@ -16,11 +16,12 @@ from faster_rcnn.fast_rcnn.config import cfg, cfg_from_file, get_output_dir
 
 # hyper-parameters
 # ------------
-imdb_name = 'voc_2007_test'
+# imdb_name = 'voc_2007_test'
+imdb_name = 'coco_2014_val'
 cfg_file = 'experiments/cfgs/faster_rcnn_end2end.yml'
 # trained_model = '/media/longc/Data/models/VGGnet_fast_rcnn_iter_70000.h5'
-trained_model = '../model/pretrained_models/faster_rcnn/VGGnet_fast_rcnn_iter_70000.h5'
-
+# trained_model = '../model/pretrained_models/faster_rcnn/VGGnet_fast_rcnn_iter_70000.h5'
+trained_model='../model/fasterckpt/saved_model3/faster_rcnn_100000.h5'
 rand_seed = 1024
 
 save_name = 'faster_rcnn_70000'
